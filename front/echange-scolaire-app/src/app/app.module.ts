@@ -5,14 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatCardModule, MatIconModule} from '@angular/material';
 import { HomeComponent } from './home/home.component';
+import { EleveComponent } from './eleve/eleve.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    EleveComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,9 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
